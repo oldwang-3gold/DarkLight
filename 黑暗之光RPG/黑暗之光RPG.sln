@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG", "黑暗之光RPG.csproj", "{1B31E595-6977-F624-5605-30B22E87EF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG.Plugins", "黑暗之光RPG.Plugins.csproj", "{395BE663-40C9-272E-6D28-B707DF75C136}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B31E595-6977-F624-5605-30B22E87EF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B31E595-6977-F624-5605-30B22E87EF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B31E595-6977-F624-5605-30B22E87EF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B31E595-6977-F624-5605-30B22E87EF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395BE663-40C9-272E-6D28-B707DF75C136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395BE663-40C9-272E-6D28-B707DF75C136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395BE663-40C9-272E-6D28-B707DF75C136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395BE663-40C9-272E-6D28-B707DF75C136}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

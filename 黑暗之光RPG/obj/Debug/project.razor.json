@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\Unity_A计划\\黑黯之光 RPG\\黑暗之光RPG\\Assembly-CSharp.csproj",
+  "TargetFramework": "v3.5",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class FollowPlayer : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class FollowPlayer : MonoBehaviour
     private float distance=0;
 
     public float scrollSpeed = 1f;
+    public float rotateSpeed = 1f;
+
+    private bool isRotating = false;
 	// Use this for initialization
 	void Start()
 	{
@@ -24,7 +28,9 @@ public class FollowPlayer : MonoBehaviour
 	{
 	    transform.position = offset + player.position;
         //处理视野的拉近和拉远效果
-	    ScrollView();
+	    RotateView();
+        ScrollView();
+       
 
 	}
 
@@ -37,5 +43,37 @@ public class FollowPlayer : MonoBehaviour
         distance += changeDis * scrollSpeed;
         distance = Mathf.Clamp(distance, 2, 18);//限制distance在2-18之间
         offset = offset.normalized * distance;//先求得offset的单位向量 再乘以长度
+    }
+
+    void RotateView()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            isRotating = true;
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            isRotating = false;
+        }
+
+        if (isRotating)
+        {
+            transform.RotateAround(player.position,player.up,rotateSpeed*Input.GetAxis("Mouse X"));
+
+            Vector3 originalPos = transform.position;
+            Quaternion originRotation = transform.rotation;
+            transform.RotateAround(player.position,transform.right,rotateSpeed*-Input.GetAxis("Mouse Y"));//影响的属性有两个 一个是postion,一个是rotation
+            float x = transform.eulerAngles.x;
+            if (x < 10 || x > 80)//超出范围之后 将属性归为原来的 就是让旋转无效
+            {
+                transform.position = originalPos;
+                transform.rotation = originRotation;
+            }
+            
+            x = Mathf.Clamp(x, 10, 80);
+            transform.eulerAngles=new Vector3(x,transform.eulerAngles.y,transform.eulerAngles.z);
+        }
+        offset = transform.position - player.position;
     }
 }

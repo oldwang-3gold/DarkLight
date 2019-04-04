@@ -223,6 +223,9 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="黑暗之光RPG.Plugins.csproj">
@@ -231,17 +234,32 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\RPG\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\RPG\Effect\Effects_02\ScrollUV.cs" />
     <Compile Include="Assets\Scripts\CharacterCreation\CharacterCreation.cs" />
+    <Compile Include="Assets\Scripts\Custom\CursorManager.cs" />
     <Compile Include="Assets\Scripts\Custom\Tags.cs" />
+    <Compile Include="Assets\Scripts\NPC\Bar_NPC.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPC.cs" />
     <Compile Include="Assets\Scripts\Player\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDir.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerStatus.cs" />
     <Compile Include="Assets\Scripts\Start\ButtonContainer.cs" />
     <Compile Include="Assets\Scripts\Start\PressAnyKey.cs" />
+    <Compile Include="Assets\Scripts\UI\FunctionBar.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\RPG\Model\Model Character\Magician\Magician_Animation.txt" />
     <None Include="Assets\RPG\Model\Model Character\Swordman\Swordman_Animation.txt" />
     <None Include="Assets\RPG\Model\Model Enemy\Wolf\Wolf_Animation.txt" />

@@ -51,21 +51,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\RPG\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
      <Compile Include="Assets\RPG\Effect\Effects_02\ScrollUV.cs" />
      <Compile Include="Assets\Scripts\CharacterCreation\CharacterCreation.cs" />
+     <Compile Include="Assets\Scripts\Custom\CursorManager.cs" />
+     <Compile Include="Assets\Scripts\Custom\ObjectsInfo.cs" />
      <Compile Include="Assets\Scripts\Custom\Tags.cs" />
+     <Compile Include="Assets\Scripts\NPC\Bar_NPC.cs" />
+     <Compile Include="Assets\Scripts\NPC\NPC.cs" />
+     <Compile Include="Assets\Scripts\Player\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerDir.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStatus.cs" />
      <Compile Include="Assets\Scripts\Start\ButtonContainer.cs" />
      <Compile Include="Assets\Scripts\Start\PressAnyKey.cs" />
+     <Compile Include="Assets\Scripts\UI\FunctionBar.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\RPG\Model\Model Character\Swordman\Swordman_Animation.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\ObjectsInfoList.txt" />
      <None Include="Assets\RPG\Model\Model Enemy\Wolf\Wolf_Animation.txt" />
      <None Include="Assets\RPG\Model\Model Character\Magician\Magician_Animation.txt" />
  <Reference Include="UnityEngine.UI">
@@ -94,6 +110,9 @@
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>D:/Program Files/Unity2017.2.0f.3/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/Unity_A计划/黑黯之光 RPG/DarkLight/黑暗之光RPG/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/TINY/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public  enum PlayerState{
 	Moving,
@@ -24,7 +25,7 @@ public class PlayerDir : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButtonDown(0)){
+		if(Input.GetMouseButtonDown(0)&&!EventSystem.current.IsPointerOverGameObject()){
 			Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitInfo;
 			bool isCollider=Physics.Raycast(ray,out hitInfo);

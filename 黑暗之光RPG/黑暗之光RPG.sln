@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG", "黑暗之光RPG.csproj", "{1B31E595-6977-F624-5605-30B22E87EF0A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG", "Assembly-CSharp.csproj", "{C9C4F9E2-E757-B4A3-FED0-3BD23BA2B224}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG.Plugins", "黑暗之光RPG.Plugins.csproj", "{395BE663-40C9-272E-6D28-B707DF75C136}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "黑暗之光RPG", "Assembly-CSharp-firstpass.csproj", "{7A591F47-1E43-6AEF-48DB-9A047E5057EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B31E595-6977-F624-5605-30B22E87EF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B31E595-6977-F624-5605-30B22E87EF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B31E595-6977-F624-5605-30B22E87EF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B31E595-6977-F624-5605-30B22E87EF0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{395BE663-40C9-272E-6D28-B707DF75C136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{395BE663-40C9-272E-6D28-B707DF75C136}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{395BE663-40C9-272E-6D28-B707DF75C136}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{395BE663-40C9-272E-6D28-B707DF75C136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C4F9E2-E757-B4A3-FED0-3BD23BA2B224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C4F9E2-E757-B4A3-FED0-3BD23BA2B224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C4F9E2-E757-B4A3-FED0-3BD23BA2B224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C4F9E2-E757-B4A3-FED0-3BD23BA2B224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A591F47-1E43-6AEF-48DB-9A047E5057EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A591F47-1E43-6AEF-48DB-9A047E5057EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A591F47-1E43-6AEF-48DB-9A047E5057EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A591F47-1E43-6AEF-48DB-9A047E5057EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

@@ -223,6 +223,9 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
@@ -235,6 +238,9 @@
     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\RPG\Model\Model Character\Magician\Magician_Animation.txt" />
     <None Include="Assets\RPG\Model\Model Character\Swordman\Swordman_Animation.txt" />
     <None Include="Assets\RPG\Model\Model Enemy\Wolf\Wolf_Animation.txt" />

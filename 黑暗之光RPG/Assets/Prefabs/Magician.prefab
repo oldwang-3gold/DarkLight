@@ -560,10 +560,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4824513731445922}
-  - component: {fileID: 111762178948723458}
+  - component: {fileID: 143389896359226330}
+  - component: {fileID: 111535910957211750}
+  - component: {fileID: 114019650300367550}
+  - component: {fileID: 114474108430364718}
+  - component: {fileID: 114166057533417948}
   m_Layer: 0
   m_Name: Magician
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1252,7 +1256,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1809046425685990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0667725, y: 29.095, z: -11.972229}
+  m_LocalPosition: {x: 2.0667725, y: 29.119, z: -12.992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4655505774465104}
@@ -1377,7 +1381,7 @@ Transform:
   m_Father: {fileID: 4716624431506454}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &111762178948723458
+--- !u!111 &111535910957211750
 Animation:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1387,11 +1391,62 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
   m_Animations:
+  - {fileID: 7400006, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400008, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400010, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400018, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400016, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
   - {fileID: 7400000, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400004, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400020, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400022, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400012, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400014, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
+  - {fileID: 7400002, guid: b3234017cfcc5b34e9b89b6ab4c37dbd, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_CullingType: 0
+--- !u!114 &114019650300367550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809046425685990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06551cd4eaa538442bbc65ac7bd49f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect_click_prefab: {fileID: 100010, guid: 462a97d0e7fe38845aaa96c35ee7ab29, type: 2}
+  speed: 3
+  playerState: 1
+--- !u!114 &114166057533417948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809046425685990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb9c4ee4c163d0409780a08a1a1c155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grade: 1
+  hp: 100
+  mp: 100
+  coin: 200
+--- !u!114 &114474108430364718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809046425685990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b822ff172f0cce6458a4bca064ec9197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137401211674934218
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1528,3 +1583,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.48038453, y: 0.0025878847, z: 0.00013457984}
     m_Extent: {x: 0.48276585, y: 0.14242716, z: 0.08103449}
   m_DirtyAABB: 0
+--- !u!143 &143389896359226330
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809046425685990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.61
+  m_Radius: 0.38
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.81, z: 0}
